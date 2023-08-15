@@ -18,7 +18,7 @@
                 <a href="./index.html" class="logo link">Web<span class="navy">Studio</span></a>
                 
                 <ul class="list navigation-list">
-                    <li>
+                    <li class="studio">
                         <a href="./index.html" class="link nav-link">
                             Studio
                         </a>
@@ -67,7 +67,7 @@
                 </h1>
             
                 <div class="align-center">
-                    <button type="button" class="first-button">
+                    <button type="button" data-modal-open class="first-button">
                     Order Service
                     </button>
                 </div>
@@ -482,5 +482,13 @@
                 </div>
         </div>
     </footer>
+    
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal-window">
+            <button type="button" data-modal-close class="cancel">X</button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
