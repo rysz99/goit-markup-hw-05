@@ -155,16 +155,19 @@
                 </h2>
                 
                 <ul class="list activity-list">
-                    <li>
+                    <li class="about-item">
                         <img src="images/activity/img1.jpg" alt="computer" width="360" height="300">
+                        <p class="about-label">Aplikacje komputerowe</p>
                     </li>
                     
-                    <li>
+                    <li class="about-item">
                         <img src="images/activity/img2.jpg" alt="chatting" width="360" height="300">
+                        <p class="about-label">Aplikacje mobilne</p>
                     </li>
                     
-                    <li>
+                    <li class="about-item">
                         <img src="images/activity/img3.jpg" alt="laptop and telephone" width="360" height="300">
+                        <p class="about-label">rozwiązania graficzne</p>
                     </li>
                 </ul>
             </div>
@@ -480,13 +483,67 @@
                         </li>
                     </ul>
                 </div>
+                <div class="newsletter">
+                    <p class="join-us">Zapisz się do newslettera</p>
+                    <form class="newsletter-form">
+                        <input class="newsletter-form-email" type="email" name="email-newsletter" placeholder="E-mail" />
+                        <button class="newsletter-form-btn newsletter-btn-flex" type="submit">Zapisz się
+                            <svg class="newsletter-btn-icon">
+                                <use href="./images/icons.svg#send"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
         </div>
     </footer>
     
     <div class="backdrop is-hidden" data-modal>
         <div class="modal-window">
             <button type="button" data-modal-close class="cancel">X</button>
+
+            <form name="signup-form" class="signup-form">
+                <p class="form-head">Zostaw swoje dane w formularzu poniżej</p>
+                <label class="form-name">Imię
+                    <svg class="form-icon" width="12" height="12">
+                        <use href="./images/icons.svg#name-form"></use>
+                    </svg>
+    
+                    <input type="text" name="username" />
+                </label>
+    
+                <label class="form-phone">Telefon
+                    <svg aria-colspan="form-icon" width="13" height="13">
+                        <use href="./images/icons.svg#phone-form"></use>
+                    </svg>
+    
+                    <input type="tel" name="phone_number" />
+                </label>
+    
+                <label class="form-email">Email
+                    <svg class="form-icon" width="15" height="12">
+                        <use href="./images/icons.svg#letter-form"></use>
+                    </svg> 
+    
+                    <input type="email" name="email" />
+                </label>
+    
+                <label class="form-feedback">Komentarz
+                    <textarea name="feedback" placeholder="Wprowadź tekst"></textarea>
+                </label>
+    
+                <div class="agree-submit">
+                    <input class="modal-form-policy visually-hidden" id="user-policy" type="checkbox" name="policy" />
+    
+                    <label for="user-policy" class="modal-form-policy-txt">Oświadczam iż akceptuję 
+                        <a class="form-agreement-link" href="#">Regulamin</a> i <a class="form-agreement-link" href="#">Politykę Prywatności.</a>
+                    </label>
+                    
+                    <button class="form-btn" type="submit">Wyślij</button>
+                </div>
+            </form>
         </div>
+
+        
     </div>
 
     <script src="./js/modal.js"></script>
